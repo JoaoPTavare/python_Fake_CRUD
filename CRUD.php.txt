@@ -3,9 +3,9 @@
 
 
 if __name__ == '__main__':
-
-    geral = list()
     aluno = dict()
+    geral = list()
+
     menu = 0
     while menu != 5:
         print('[1] Listar'
@@ -14,14 +14,18 @@ if __name__ == '__main__':
               ' [4] Excluir'
               ' [5] Sair')
 
+        menu = int(input('O que você deseja?'))
+
         if menu == 1:
-            print(geral)
+
+            for i in geral:
+                print(i)
 
         elif menu == 2:
             aluno['nome'] = str(input('Nome do aluno:'))
             aluno['idade'] = str(input('Idade do aluno:'))
             aluno['Media'] = float(input('Media do aluno:'))
-            geral.append(geral.copy())
+            geral.append(aluno.copy())
 
         elif menu == 3:
             print('')
@@ -37,7 +41,7 @@ if __name__ == '__main__':
 
 
 
-        menu = int(input('O que você deseja?'))
+
 
 
 
