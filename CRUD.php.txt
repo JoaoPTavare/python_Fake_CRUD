@@ -1,0 +1,43 @@
+#Cod_by_Jao
+
+
+
+if __name__ == '__main__':
+
+    geral = list()
+    aluno = dict()
+    menu = 0
+    while menu != 5:
+        print('[1] Listar'
+              ' [2] Cadastrar'
+              ' [3] Update'
+              ' [4] Excluir'
+              ' [5] Sair')
+
+        if menu == 1:
+            print(geral)
+
+        elif menu == 2:
+            aluno['nome'] = str(input('Nome do aluno:'))
+            aluno['idade'] = str(input('Idade do aluno:'))
+            aluno['Media'] = float(input('Media do aluno:'))
+            geral.append(geral.copy())
+
+        elif menu == 3:
+            print('')
+
+        elif menu == 4:
+            print('nada ainda')
+            print(menu)
+
+        elif menu == 5:
+            print('num')
+        else:
+            print('digite um número valido')
+
+
+
+        menu = int(input('O que você deseja?'))
+
+
+
