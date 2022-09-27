@@ -2,6 +2,8 @@ if __name__ == '__main__':
         aluno = dict()
         geral = list()
 
+
+        indice = 0
         menu = 0
         while menu != 5:
 
@@ -21,22 +23,27 @@ if __name__ == '__main__':
                     print(i)
 
             elif menu == 2:
-                aluno['ID'] = int(input('ID do aluno:'))
+
+                aluno['ID'] = indice
                 aluno['nome'] = str(input('Nome do aluno:'))
                 aluno['idade'] = str(input('Idade do aluno:'))
                 aluno['Turma'] = str(input('Turma do aluno:'))
                 geral.append(aluno.copy())
                 print('Aluno cadastrado com sucesso!')
+                indice += 1
 
             elif menu == 3:
-                print('')
+                atualizar = int(input('Indece do aluno que você deseja atualizar:'))
+                
+
 
             elif menu == 4:
-                print('nada ainda')
-                print(menu)
+                deletar = int(input('Didite o Id que vc deseja deletar:'))
+                geral.pop(deletar)
+                print('Usuario deletado com sucesso')
 
             elif menu == 5:
-                print('num')
+                print('Até a próxima')
             else:
                 print('digite um número valido')
 
